@@ -52,13 +52,15 @@ Routers have very different ways to configure and set the DNS server address, so
 
 
 ## DNS Sinkhole 101
-The DNS server that provided block ad because it acts as a sinkhole 
-For the curious ones who want to know how it works. By the design of internet, computers connected are identified (located) by an IP address. But it became quite annoying to remember the IP address of computers, so born the Domain Name System (DNS) [^dns]. 
+
+### What is a Domain Name System (DNS) Server? 
+By the design of internet, computers connected are identified (located) by an IP address. But it became quite annoying to remember the IP address of computers, so born the Domain Name System (DNS) [^dns]. 
 
 [^dns]: Why not just use domain name instead of ip address in the first place? Perhaps it's for backward compatibility. It was originally designed with numbers as IP addresses and we are just stuck with it, just like we are stuck with using numbers instead of username for phones. 
 
 When you go to a website, say [https://google.com](https://google.com), your computer needs to know the IP address of the server (in this case `172.217.161.142`) in order to communicate with the server. Your computer would send a request to the default DNS server to ask for the IP address associated with google.com, then your computer would follow that IP address to request for the webpage. Of course, you don't see the IP address in your address bar because all these happen behind the scene. 
 
+### What is a DNS sinkhole?
 A DNS sinkhole selectively returns the IP address of Domain Names, in that it will not give you the ip address of a known domain name used to host ads[^ad-dns]. For example `https://acdn.adnxs.com/` is used to exclusively host ads. 
 
 [^ad-dns]: Luckily most ads are hosted on separate domain names as the main contents. For example, Google hosts some ads under `ads.google.com` and its google search is under `www.google.com`. However, some websites server their content and ads from the same sever such as YouTube and Instagram, in which case the ad blocker would not be able to block them (otherwise it would block the legit contents as well). 
