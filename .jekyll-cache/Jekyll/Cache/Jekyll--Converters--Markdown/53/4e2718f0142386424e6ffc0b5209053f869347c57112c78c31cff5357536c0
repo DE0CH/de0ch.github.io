@@ -1,0 +1,105 @@
+I"�&<p>If you want to block ads everywhere for any device without installing any apps, including in TV boxes and mobile games, you can use a DNS server that blocks ad.</p>
+
+<h2 id="advanced-set-up">Advanced Set Up</h2>
+
+<p>The DNS server I host is at ip address <code class="language-plaintext highlighter-rouge">123.202.7.214</code>. It is located in Hong Kong.</p>
+
+<p>The ip address will change, but I will try to map it to <code class="language-plaintext highlighter-rouge">http://de0ch.ydns.eu</code> when I can.</p>
+
+<h2 id="step-by-step-guide">Step by step Guide</h2>
+<p>I am (obviously) not the only one providing an ad-blocking DNS server; <a href="https://adguard.com/">AdGuard</a> also provides one<sup id="fnref:why-dns" role="doc-noteref"><a href="#fn:why-dns" class="footnote">1</a></sup>. You can follow their well-written <a href="https://adguard.com/en/adguard-dns/overview.html">guide</a>, just replace their dns IP address (<code class="language-plaintext highlighter-rouge">94.140.14.14</code>, <code class="language-plaintext highlighter-rouge">94.140.15.15</code>, etc) with the one provided above.</p>
+
+<p>The following is a condensed version of the guide. Depending on the device that you are using, the steps vary. Therefor I am just going to go through the set up procedure for common platforms. Usually the computer will ask for two DNS address, so put the same address for both or leave the second one blank<sup id="fnref:why-dns-option" role="doc-noteref"><a href="#fn:why-dns-option" class="footnote">2</a></sup>.</p>
+
+<h3 id="for-router">For router</h3>
+<p>I recommend you set it on your router because the changes will also be automatically applied to all the devices connected to the network.
+Routers have very different ways to configure and set the DNS server address, so it’s better if you Google yourself how to configure for your specific router.</p>
+
+<h3 id="for-ios">For iOS</h3>
+<ol>
+  <li>Go to <strong>Settings</strong>.</li>
+  <li>Go to <strong>Wi-Fi</strong> (it is impossible to set DNS for mobile networks).</li>
+  <li>Tap on the name of the currently active network.</li>
+  <li>In the <strong>DNS</strong> field enter the address <code class="language-plaintext highlighter-rouge">123.202.7.214</code>.</li>
+</ol>
+
+<h3 id="for-android">For Android</h3>
+<ol>
+  <li>Go to <strong>Settings</strong>.</li>
+  <li>Go to <strong>Wi-Fi</strong>.</li>
+  <li>Long press on the name of the currently active network and select <strong>Modify Network</strong>.</li>
+  <li>Find the IP setting (it might be in the <strong>Advanced</strong> tab), change it from DHCP to Static and change both <strong>DNS 1</strong> and <strong>DNS 2</strong> to <code class="language-plaintext highlighter-rouge">123.202.7.214</code>.</li>
+</ol>
+
+<h3 id="for-windows">For Windows</h3>
+<ol>
+  <li>Go to <strong>Control Panel</strong>.</li>
+  <li>Go to <strong>Network and Internet</strong>, and then go to <strong>Network and Sharing Center</strong>.</li>
+  <li>On the left side of the screen, select <strong>Change adapter settings</strong>.</li>
+  <li>Right Click on the network and select <strong>Properties</strong>.</li>
+  <li>Select <strong>Properties</strong> for <strong>Internet Protocol Version 4 (TCP/IP)</strong>.</li>
+  <li>Change the <strong>DNS server addresses</strong> to <code class="language-plaintext highlighter-rouge">123.202.7.214</code>.</li>
+</ol>
+
+<h3 id="for-mac-os">For Mac OS</h3>
+<ol>
+  <li>Go to <strong>System Preferences</strong>.</li>
+  <li>Click on <strong>Network</strong>.</li>
+  <li>Select the first connection in the list on the left, and select <strong>Advanced</strong>.</li>
+  <li>Select the <strong>DNS</strong> tab and add (and only add) <code class="language-plaintext highlighter-rouge">123.202.7.214</code>.</li>
+</ol>
+
+<h2 id="dns-sinkhole-101">DNS Sinkhole 101</h2>
+<p>The DNS server that provided block ad because it acts as a sinkhole 
+For the curious ones who want to know how it works. By the design of internet, computers connected are identified (located) by an IP address. But it became quite annoying to remember the IP address of computers, so born the Domain Name System (DNS) <sup id="fnref:dns" role="doc-noteref"><a href="#fn:dns" class="footnote">3</a></sup>.</p>
+
+<p>When you go to a website, say <a href="https://google.com">https://google.com</a>, your computer needs to know the IP address of the server (in this case <code class="language-plaintext highlighter-rouge">172.217.161.142</code>) in order to communicate with the server. Your computer would send a request to the default DNS server to ask for the IP address associated with google.com, then your computer would follow that IP address to request for the webpage. Of course, you don’t see the IP address in your address bar because all these happen behind the scene.</p>
+
+<p>A DNS sinkhole selectively returns the IP address of Domain Names, in that it will not give you the ip address of a known domain name used to host ads<sup id="fnref:ad-dns" role="doc-noteref"><a href="#fn:ad-dns" class="footnote">4</a></sup>. For example <code class="language-plaintext highlighter-rouge">https://acdn.adnxs.com/</code> is used to exclusively host ads.</p>
+
+<h2 id="privacy-concerns">Privacy Concerns</h2>
+<p>If you use my DNS ad blocker, does that mean I can see you what you are doing online?
+No, because</p>
+<ol>
+  <li>I have no interest in what you do.</li>
+  <li>I have disabled logging and analytics. completely (to the best of my knowledge). I can only see how many requests I am getting, but not from who. I promise that I will never turn it on because I don’t believe in tracking.</li>
+  <li>Even if am evil and wants to track you, I would not be able to. You would only send me the domain name. For example, if you search something on Google, I would only know you’ve searched for <em>something</em> on Google, but I won’t know the exact search terms.</li>
+</ol>
+
+<h2 id="make-your-own-dns-server-with-pi-hole">Make your own DNS server with pi-hole</h2>
+<p>I essentially made a DNS server with pi-hole, hosted on a Raspberry Pi, and exposed the server to the internet. You can do the same, if you want more speed and control over your network. Just go to <a href="https://pi-hole.net">pi-hole.net</a> to learn how to set up. Linus Tech Tips also made an <a href="https://youtu.be/KBXTnrD_Zs4">excellent tutorial</a> on that.</p>
+
+<h2 id="disclaimer">Disclaimer</h2>
+
+<p>In short: I don’t guarantee it will work so please don’t sue me if it doesn’t.</p>
+
+<p>In long:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE PROVIDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SERVICES.
+</code></pre></div></div>
+
+<h1 id="acknowledgement">Acknowledgement</h1>
+
+<p>I used <a href="https://pi-hole.net/">pi-hole</a> as the DNS snikhole, running on a Raspberry Pi. I used Google DNS as the upstream DNS server. The block lists I used are</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+https://mirror1.malwaredomains.com/files/justdomains
+</code></pre></div></div>
+
+<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:why-dns" role="doc-endnote">
+      <p>So why am I making another one that already exists? The one by ad-guard is in Europe and the latency is high. Mine is in Hong Kong, which is perfect if you live in Hong Kong. <a href="#fnref:why-dns" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:why-dns-option" role="doc-endnote">
+      <p>WHy not use a back up DNS? When your computer fails to get an IP address from the primary DNS server, it will consult the secondary DNS server. So if your second DNS server does not block ad, ad-blocking would not work. Your computer can still load the ad by using the secondary DNS. <a href="#fnref:why-dns-option" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:dns" role="doc-endnote">
+      <p>Why not just use domain name instead of ip address in the first place? Perhaps it’s for backward compatibility. It was originally designed with numbers as IP addresses and we are just stuck with it, just like we are stuck with using numbers instead of username for phones. <a href="#fnref:dns" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:ad-dns" role="doc-endnote">
+      <p>Luckily most ads are hosted on separate domain names as the main contents. For example, Google hosts some ads under <code class="language-plaintext highlighter-rouge">ads.google.com</code> and its google search is under <code class="language-plaintext highlighter-rouge">www.google.com</code>. However, some websites server their content and ads from the same sever such as YouTube and Instagram, in which case the ad blocker would not be able to block them (otherwise it would block the legit contents as well). <a href="#fnref:ad-dns" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET
