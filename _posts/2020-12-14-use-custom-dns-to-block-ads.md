@@ -7,9 +7,7 @@ If you want to block ads everywhere for any device without installing any apps, 
 
 ## Advanced Set Up
 
-The DNS server I host is at ip address `123.202.7.214`. It is located in Hong Kong.
-
-The ip address will change, but I will try to map it to `http://de0ch.ydns.eu` when I can.
+The DNS server I host is at ip address `18.163.112.19`. It is located in Hong Kong.
 
 ## Step by step Guide
 I am (obviously) not the only one providing an ad-blocking DNS server; [AdGuard](https://adguard.com/) also provides one[^why-dns]. You can follow their well-written [guide](https://adguard.com/en/adguard-dns/overview.html), just replace their dns IP address (`94.140.14.14`, `94.140.15.15`, etc) with the one provided above.
@@ -26,13 +24,13 @@ Routers have very different ways to configure and set the DNS server address, so
 1. Go to __Settings__.
 2. Go to __Wi-Fi__ (it is impossible to set DNS for mobile networks).
 3. Tap on the name of the currently active network.
-4. In the __DNS__ field enter the address `123.202.7.214`.
+4. In the __DNS__ field enter the address `18.163.112.19`.
 
 ### For Android 
 1. Go to __Settings__.
 2. Go to __Wi-Fi__.
 2. Long press on the name of the currently active network and select __Modify Network__. 
-4. Find the IP setting (it might be in the __Advanced__ tab), change it from DHCP to Static and change both __DNS 1__ and __DNS 2__ to `123.202.7.214`. 
+4. Find the IP setting (it might be in the __Advanced__ tab), change it from DHCP to Static and change both __DNS 1__ and __DNS 2__ to `18.163.112.19`. 
 
 ### For Windows
 1. Go to __Control Panel__.
@@ -40,13 +38,13 @@ Routers have very different ways to configure and set the DNS server address, so
 3. On the left side of the screen, select __Change adapter settings__.
 4. Right Click on the network and select __Properties__. 
 5. Select __Properties__ for __Internet Protocol Version 4 (TCP/IP)__.
-6. Change the __DNS server addresses__ to `123.202.7.214`.
+6. Change the __DNS server addresses__ to `18.163.112.19`.
 
 ### For Mac OS
 1. Go to __System Preferences__.
 2. Click on __Network__.
 3. Select the first connection in the list on the left, and select __Advanced__.
-4. Select the __DNS__ tab and add (and only add) `123.202.7.214`. 
+4. Select the __DNS__ tab and add (and only add) `18.163.112.19`. 
 
 [^why-dns]: So why am I making another one that already exists? The one by ad-guard is in Europe and the latency is high. Mine is in Hong Kong, which is perfect if you live in Hong Kong.
 
