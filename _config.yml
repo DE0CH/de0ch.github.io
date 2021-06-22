@@ -1,7 +1,9 @@
 title: Deyao's Blog
 author: Deyao Chen
 email: chendeyao000@gmail.com
-description: > # this means to ignore newlines until "twitter_username:"
+description: 
+  Thoughts on math, programming and other stuff
+long_description: > # this means to ignore newlines until "twitter_username:"
   I am just another person trying to do something useful for the world. I write about interesting (I think) random math and programming stuff here, occasionally other things. 
 
 # social links
