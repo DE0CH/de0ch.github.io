@@ -4,7 +4,7 @@ title: "How big is the universe? It's so big that it's bigger than itself."
 custom_css: cantor-table
 ---
 
-Set in set theory deals with sets -- collection of things -- like the set all natural number is a set and the set of all polygons. Sets can contain anything (including sets) and can be however large. But even though a set can be easily larger than the entire physical (not just the observable) universe, there are sets that are too large to be a set. One of them is the set of everything (known as the universal set). Known as the Russell's Paradox, the proof itself is as spectacular as the result. 
+Set in set theory deals with sets -- collection of things -- like the set all natural number is a set and the set of all polygons. Sets can contain anything (including sets) and can be however large. But even though a set can be easily larger than the entire physical (not just the observable) universe, there are sets that are too large to be a set. One of them is the set of everything (known as the universal set). Known as the Russell's Paradox, the proof itself is as spectacular as the result. The attempt to create a foundation accidentally created a creature too large to be contained. 
 
 # A Short Proof
 
@@ -28,7 +28,8 @@ Every entity/thing in our discussion is a set. This is because all mathematical 
 
 
 # A Small Universe
-Looking at the universal set directly can be quite daunting and disorientating because it's infinite in size. So we will start with a smaller "universal" set. We will prove that the universal set contains more than 5 elements. 
+
+Looking at the universal set directly can be quite daunting and disorientating because it's infinite in size. So we will start with a smaller "universal" set. We will prove that the universal set contains more than 5 elements. (If you are familiar with Cantor's diagonal argument, you may skip to A Large Universe)
 
 No duh, you say. But stick with me, if we meticulously examine the underlying logic for our intuition, we can apply the similar logic to a bigger case where intuition fails.
 
@@ -395,11 +396,11 @@ And make a new set that is not in the universe.
     </tr>
 </table>
 
-Now we have made at least one element that is not in the set. We can conclude that the universal set, which by definition contains every set, has more than 5 elements. A set of 5 elements is too small to contain the universe! By the look of it, we need at least $2^5 = 32$ sets to cover all the combinations of the 5 sets, but that shifts the problem back. By the time our set is 32 element large, we need $2^{32} = 4294967296$ sets to cover all the combination of the 32 sets, and ad infinitum. 
+Now we have made at least one element that is not in the set. We can conclude that the universal set, which by definition contains every set, has more than 5 elements. A set of 5 elements is too small to contain the universe! By the look of it, we need at least $2^5 = 32$ sets to cover all the combinations of the 5 sets, but that shifts the problem back. By the time our set is 32 element large, we need $2^{32} = 4294967296$ sets to cover all the combination of the 32 sets, and ad infinitum. Just like exponential growth, the size quickly explodes.
 
 Our problem at hand is, unfortunately, worse than ad infinitum. The universe can't even be contained by a set of infinite set! Let's apply our reasoning to the actual universal set.
 
-# A Big Universe
+# A Large Universe
 
 Let's, for now, assume that the universal set exists. Just like before, we write out the universal set in the following table. Naturally the sets we had before are also elements of the universal set, so we will write them out first. 
 
@@ -590,7 +591,11 @@ $$S = \{x \in U: y \notin f(y) \}$$
 
 where $f$ is a surjective function from $U$ onto $U$. Now we ask: is $f^{-1}(S)$ [^inverse-function] in $S$? It if isn't in $S$, it is in $S$, and if it is in $S$, it is not in $S$. In this argument, we didn't really make use of self reference because that is no the root cause of the paradox. It is rather because the universe is too big to be a set. 
 
-CONCLUSION
+# Conclusion
+
+Hopefully, by now you have gotten an intuitive sense why the universal set is too big to be a set. No matter how big the universal set it, it should be much much bigger. It also follows that for any set, not matter how large it is, is the small part compared to all the set that exists. This really makes us humble. There are so much that is out there that is unknown, beyond what our eyes can see and the physical universe. Whether you believe these sets are objective existence in Plato's world of form, it's truly breathtaking to see the curious properties of the universe of sets. 
+
+If we want to be fancy, we can proclaim "God is dead, and the universe doesn't exist!"
 
 [^continuum-hypothesis]: I am referring to the continuum hypothesis here. 
 
