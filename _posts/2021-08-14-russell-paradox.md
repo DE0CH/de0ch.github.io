@@ -135,7 +135,7 @@ It means that the set 🥪
 - contains 🌮
 - does not contain 🥨
 
-You might notice that there are a lot of combinations of the five sets that is not in the universe. For example, the set $\{🍕, 🌮\} is not in the "universal" set. Right now, we can just think about a set by looking at the "universe", but as it gets larger, we need a systematic way finding a set that does not exists. 
+You might notice that there are a lot of combinations of the five sets that is not in the universe. For example, the set $\{🍕, 🌮\}$ is not in the "universal" set. Right now, we can just think about a set by looking at the "universe", but as it gets larger, we need a systematic way finding a set that does not exists. 
 
 For finding a new set that is not in the universe, we use a technique called diagonalization. 
 
