@@ -387,7 +387,7 @@ And make a new set that is not in the universe.
         <th>🥨</th>
     </tr>
     <tr>
-        <th>?</th>
+        <th>??</th>
         <td>🅾️</td>
         <td>✅</td>
         <td>🅾️</td>
@@ -576,7 +576,7 @@ We flip the elements and make a new set that is not an element of the universal 
         <th>...</th>
     </tr>
     <tr>
-        <th>??</th>
+        <th>???</th>
         <td>🅾️</td>
         <td>🅾️</td>
         <td>✅</td>
