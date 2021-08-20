@@ -581,6 +581,7 @@ We flip the elements and make a new set that is not an element of the universal 
         <td>✅</td>
         <td>🅾️</td>
         <td>🅾️</td>
+        <td>...</td>
     </tr>
 </table>
 
