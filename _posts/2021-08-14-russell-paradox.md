@@ -93,7 +93,7 @@ Alternatively, we can write it in a table form in the following way, which is us
     </tr>
 </table> 
 
-The rows of the table denote what the sets contain. ✅ means that the set in the row contains the element in the color, and 🅾️ means that it does not. 
+The rows of the table denote what the sets contain. ✅ means that the set in the row contains the element in the column, and 🅾️ means that it does not. 
 
 For example, let's take a look at the third row
 
