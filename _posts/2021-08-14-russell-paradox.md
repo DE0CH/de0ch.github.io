@@ -486,7 +486,7 @@ Similarity, we can also construct an element by inverting the diagonal elements,
         <td>✅</td>
         <td>🅾️</td>
         <td>✅</td>
-        <td>✅</td>>
+        <td>✅</td>
         <td>...</td>
     </tr>
 </table>
