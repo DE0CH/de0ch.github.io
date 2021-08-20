@@ -34,7 +34,11 @@ No duh, you say. But stick with me, if we meticulously examine the underlying lo
 
 The only elements in our universe are 🍟, 🍕, 🥪, 🌮, 🥨. Since these are the only elements in the universe, it follows that they are composed only of themselves, such as
 
-$$\begin{aligned} 🍟 &= \{🍕\} \\ 🍕 &= \{\} \\ 🥪 &= \{🥪, 🌮\} \\ 🌮 &= \{🍟, 🍕, 🥪, 🥨\} \\ 🥨 &= \{🍟, 🍕\} \\  \end{aligned} $$
+- 🍟 = {🍕} 
+- 🍕 = {}
+- 🥪 = {🥪, 🌮} 
+- 🌮 = {🍟, 🍕, 🥪, 🥨} 
+- 🥨 = {🍟, 🍕} 
 
 Alternatively, we can write it in a table form in the following way, which is useful for finding a set that is not the universe. 
 
@@ -135,7 +139,7 @@ It means that the set 🥪
 - contains 🌮
 - does not contain 🥨
 
-You might notice that there are a lot of combinations of the five sets that is not in the universe. For example, the set $\{🍕, 🌮\}$ is not in the "universal" set. Right now, we can just think about a set by looking at the "universe", but as it gets larger, we need a systematic way finding a set that does not exists. 
+You might notice that there are a lot of combinations of the five sets that is not in the universe. For example, the set {🍕, 🌮} is not in the "universal" set. Right now, we can just think about a set by looking at the "universe", but as it gets larger, we need a systematic way finding a set that does not exists. 
 
 For finding a new set that is not in the universe, we use a technique called diagonalization. 
 
