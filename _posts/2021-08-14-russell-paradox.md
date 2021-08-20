@@ -29,7 +29,7 @@ Every entity/thing in our discussion is a set. This is because all mathematical 
 
 # A Small Universe
 
-Looking at the universal set directly can be quite daunting and disorientating because it's infinite in size. So we will start with a smaller "universal" set. We will prove that the universal set contains more than 5 elements. (If you are familiar with Cantor's diagonal argument, you may skip to A Large Universe)
+Looking at the universal set directly can be quite daunting and disorientating because it's infinite in size. So we will start with a smaller "universal" set. We will prove that the universal set contains more than 5 elements. (If you are familiar with Cantor's diagonal argument, you may skip to the section A Large Universe)
 
 No duh, you say. But stick with me, if we meticulously examine the underlying logic for our intuition, we can apply the similar logic to a bigger case where intuition fails.
 
