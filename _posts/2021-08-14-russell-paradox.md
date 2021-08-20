@@ -270,7 +270,7 @@ Based on the diagonal states, we make a new element.
     </tr>
 </table>
 
-This is not an element of the "universal" set because it's different from every element by one element. 
+This is not an element of the "universal" set because it's different from every element by one element. For example, it's different from 🍟 because 🍟 does not contain 🍟,but the new element contains 🍟 (as we flipped the diagonal), and it's different from 🥪 because 🥪 contains 🥪, whereas the the new element does not contain 🥪.
 
 Note that we don't actually need to use the strict diagonal, we can use other combination as long as we cover all the bases. For example, we can choose the following elements. 
 
