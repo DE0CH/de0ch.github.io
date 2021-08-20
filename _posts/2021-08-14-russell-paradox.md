@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "How big is the universe? It's so big that it's bigger than itself."
-custom_css: cantor-table
 ---
 
 Set in set theory deals with sets -- collection of things -- like the set all natural number is a set and the set of all polygons. Sets can contain anything (including sets) and can be however large. But even though a set can be easily larger than the entire physical (not just the observable) universe, there are sets that are too large to be a set. One of them is the set of everything (known as the universal set). Known as the Russell's Paradox, the proof itself is as spectacular as the result. The attempt to create a foundation accidentally created a creature too large to be contained. 
@@ -10,7 +9,7 @@ Set in set theory deals with sets -- collection of things -- like the set all na
 
 The original version of the proof is effective and succinct. It goes as follows.
 
-Let's assume that the universal set exists. Now we construct a subset $S$ of the universal set (which is a new set that contains some of the elements in the original set) such that it contains all elements that does not contain itself. Symbolically,
+Let's assume that the universal set exists. Now we construct a set $S$ such that it contains all elements that does not contain itself. Symbolically,
 
 $$ S = \{ x \in U: x \notin x \} \text{,}$$
 
@@ -269,7 +268,7 @@ Based on the diagonal states, we make a new element.
 
 This is not an element of the "universal" set because it's different from every element by one element. 
 
-Note that we don't actually need to use the strict diagonal, we can use other combination as long as we cover all the bases [^all-bases]. For example, we can choose the following elements. 
+Note that we don't actually need to use the strict diagonal, we can use other combination as long as we cover all the bases. For example, we can choose the following elements. 
 
 <table class="table-2d">
     <tr>
@@ -336,14 +335,14 @@ Like before, we flip them.
     <tr>
         <th>🍟</th>
         <td></td>
-        <td>✅</td>
+        <td>🅾️</td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
     <tr>
         <th>🍕</th>
-        <td>🅾️</td>
+        <td>✅</td>
         <td></td>
         <td></td>
         <td></td>
@@ -388,15 +387,15 @@ And make a new set that is not in the universe.
     </tr>
     <tr>
         <th>??</th>
-        <td>🅾️</td>
         <td>✅</td>
+        <td>🅾️</td>
         <td>🅾️</td>
         <td>🅾️</td>
         <td>✅</td>
     </tr>
 </table>
 
-Now we have made at least one element that is not in the set. We can conclude that the universal set, which by definition contains every set, has more than 5 elements. A set of 5 elements is too small to contain the universe! By the look of it, we need at least $2^5 = 32$ sets to cover all the combinations of the 5 sets, but that shifts the problem back. By the time our set is 32 element large, we need $2^{32} = 4294967296$ sets to cover all the combination of the 32 sets, and ad infinitum. Just like exponential growth, the size quickly explodes.
+Now we have made at least one element that is not in the set. We can conclude that the universal set, which by definition contains every set, has more than $5$ elements. A set of $5$ elements is too small to contain the universe! By the look of it, we need at least $2^5 = 32$ sets to cover all the combinations of the $5$ sets, but that shifts the problem back. By the time our set is $32$ element large, we need $2^{32} = 4294967296$ sets to cover all the combination of the $32$ sets, and ad infinitum. Just like exponential growth, the size quickly explodes.
 
 Our problem at hand is, unfortunately, worse than ad infinitum. The universe can't even be contained by a set of infinite set! Let's apply our reasoning to the actual universal set.
 
@@ -492,11 +491,11 @@ Similarity, we can also construct an element by inverting the diagonal elements,
     </tr>
 </table>
 
-But this element is not in the universal set, because it is different from every element in at least one place. Therefore, we reach a paradox such that no matter how big the universal set is, it can be bigger.
+But this element is not in the universal set, because it is different from every element in at least one place. Therefore, we reach a paradox such that no matter how big the universal set is, it can be bigger. 
 
 So what? Can't we just make it bigger and include the new element? Yes, but the key is that we have already *assumed* that we have everything in the universal set at first. We have reached a contradiction. We have carefully reasoned our way through, so the problem must lie the assumption. It is also important to note that this is different from infinity. Infinity, in set theory, is a defined concept, whereas this is a logical paradox.
 
-With this view in mind, if we ban self reference, our argument would still work, because we don't really have to chose the diagonal elements. We can shift the selection to the left or right by one.
+Notice that taking flipping the diagonal elements is essentially the same as saying "include every element that does not include itself". But with this view in mind, if we ban self reference, our argument would still work, because we don't really have to chose the diagonal elements. We can shift the selection to the left or right by one.
 
 <table class="table-2d">
     <tr>
