@@ -9,7 +9,7 @@ Set in set theory deals with sets -- collection of things -- like the set all na
 
 The original version of the proof is effective and succinct. It goes as follows.
 
-Let's assume that the universal set exists. Now we construct a set $S$ such that it contains all elements that does not contain itself. Symbolically,
+Let's assume that the universal set exists. Now we construct a set $S$ such that it contains all elements that does not contain itself. If we use symbols,
 
 $$ S = \{ x \in U: x \notin x \} \text{,}$$
 
@@ -495,11 +495,11 @@ Similarity, we can also construct an element by inverting the diagonal elements,
     </tr>
 </table>
 
-But this element is not in the universal set, because it is different from every element in at least one place. Therefore, we reach a paradox such that no matter how big the universal set is, it can be bigger. 
+But this element is not in the universal set, because it is different from every set by one element. Therefore, we reach a paradox such that no matter how big the universal set is, it can be bigger. 
 
 So what? Can't we just make it bigger and include the new element? Yes, but the key is that we have already *assumed* that we have everything in the universal set at first. We have reached a contradiction. We have carefully reasoned our way through, so the problem must lie the assumption. It is also important to note that this is different from infinity. Infinity, in set theory, is a defined concept, whereas this is a logical paradox.
 
-Notice that taking flipping the diagonal elements is essentially the same as saying "include every element that does not include itself". But with this view in mind, if we ban self reference, our argument would still work, because we don't really have to chose the diagonal elements. We can shift the selection to the left or right by one.
+Notice that taking flipping the diagonal elements is essentially the same as saying "include every element that does not include itself", because if the diagonal element is 🅾️, it means it does not contain itself. We the flip it so that it contains itself, and vise versa. With this view in mind, if we ban self reference, our argument would still work, because we don't really have to chose the diagonal elements. We can shift the selection to the left or right by one.
 
 <table class="table-2d">
     <tr>
@@ -589,7 +589,9 @@ We flip the elements and make a new set that is not an element of the universal 
     </tr>
 </table>
 
-Formally, we can make the following statement.
+Also, just like last time, we can choose any radom elements, as long as we make sure to choose a at least unique element from every set. 
+
+For those who desire some more mathematical formalism, the above discussion translate to the following statement.
 
 $$S = \{x \in U: y \notin f(y) \}$$
 
