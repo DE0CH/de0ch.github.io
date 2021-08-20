@@ -252,3 +252,32 @@ table {
     border: 1px solid $grey-color-light;
   }
 }
+
+.table-2d {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  color: $text-color;
+  border: none;
+  tr {
+    &:nth-child(1) {
+      th {
+        border-bottom: 1px solid $text-color;;
+      }
+    }
+    &:nth-child(even) {
+      background-color: transparent;
+    }
+  }
+  td {
+    border: none;
+  }
+  th {
+    background-color: transparent;
+    border: none;
+    &:nth-child(1) {
+      border-right: 1px solid $text-color;  
+    }
+  }
+
+}
