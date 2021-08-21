@@ -3,7 +3,7 @@ layout: post
 title: "How big is the universe? It's so big that it's bigger than itself."
 ---
 
-Set theory deals with sets - collections of things, like the set of all natural numbers and the set of all polygons. Sets can contain anything (including sets) and can be however large. But even though a set can be easily larger than the entire physical (not just the observable) universe, there are sets that are too large to be a set. One of them is the set of everything (known as the universal set). Known as the Russell's Paradox, the proof itself is as spectacular as the result. The attempt to create a foundation accidentally created a creature too large to be contained. 
+Set theory deals with sets - collections of things, like the set of all natural numbers and the set of all polygons. Sets can contain anything (including sets) and can be however large. But even though a set can be easily larger than the entire physical (not just the observable) universe, there are sets that are too large to be a set. One of them is the set of everything (known as the universal set). Known as the Russell's Paradox, the proof itself is as spectacular as the result. The attempt to create a foundation through set theory accidentally created a creature too large to be contained. 
 
 # A Short Proof
 
@@ -31,7 +31,7 @@ Looking at the universal set directly can be quite daunting and disorientating b
 
 No duh, you say. But stick with me, if we meticulously examine the underlying logic for our intuition, we can apply the similar logic to a bigger case where intuition fails.
 
-The only elements in our universe are 🍟, 🍕, 🥪, 🌮, 🥨. Since these are the only elements in the universe, it follows that they are composed only of themselves, such as
+The only elements in our universe are 🍟, 🍕, 🥪, 🌮, 🥨. Since these are the only elements in the "universe", it follows that they are composed only of themselves, such as
 
 - 🍟 = {🍕} 
 - 🍕 = {}
@@ -138,7 +138,7 @@ It means that the set 🥪
 - contains 🌮
 - does not contain 🥨
 
-You might notice that there are a lot of combinations of the five sets that is not in the universe. For example, the set {🍕, 🌮} is not in the "universal" set. Right now, we can just think about a set by looking at the "universe", but as it gets larger, we need a systematic way finding a set that does not exists. 
+You might notice that there are a lot of combinations of the five sets that is not in the universe. For example, the set {🍕, 🌮} is not in the "universal" set. Right now, we can just think about a set by looking it, but as it gets larger, we need a systematic way finding a set that does not exists. 
 
 For finding a new set that is not in the universe, we use a technique called diagonalization. 
 
@@ -398,9 +398,9 @@ And make a new set that is not in the universe.
     </tr>
 </table>
 
-Now we have made at least one element that is not in the set. We can conclude that the universal set, which by definition contains every set, has more than $5$ elements. A set of $5$ elements is too small to contain the universe! By the look of it, we need at least $2^5 = 32$ sets to cover all the combinations of the $5$ sets, but that only shifts the problem back. By the time our set is $32$ element large, we need $2^{32} = 4294967296$ sets to cover all the combination of the $32$ sets, and ad infinitum. Just like exponential growth, the size quickly explodes.
+Now that we have made at least one element that is not in the set, we can conclude that the universal set, which by definition contains every set, has more than $5$ elements. A set of $5$ elements is too small to contain the universe! By the look of it, we need at least $2^5 = 32$ sets to cover all the combinations of the $5$ sets, but that only shifts the problem back. By the time our set is $32$ element large, we need $2^{32} = 4294967296$ sets to cover all the combination of the $32$ sets, and ad infinitum. Just like exponential growth, the size quickly explodes.
 
-Our problem at hand is, unfortunately, worse than ad infinitum. The universe can't even be contained by a set of infinite set! Let's apply our reasoning to the actual universal set.
+Our problem at hand is, unfortunately, worse than ad infinitum. The universe can't even be contained by a set of infinite set! Let's apply our reasoning to the actual universal set to see why.
 
 # A Large Universe
 
@@ -498,7 +498,7 @@ But this element is not in the universal set, because it is different from every
 
 So what? Can't we just make it bigger and include the new element? Yes, but the key is that we have already *assumed* that we have everything in the universal set at first. We have reached a contradiction. We have carefully reasoned our way through, so the problem must lie the assumption. It is also important to note that this is different from infinity. Infinity, in set theory, is a defined concept, whereas this is a logical paradox.
 
-Notice that taking flipping the diagonal elements is essentially the same as saying "include every element that does not include itself", because if the diagonal element is 🅾️, it means it does not contain itself. We the flip it so that it contains itself, and vise versa. With this view in mind, if we ban self reference, our argument would still work, because we don't really have to chose the diagonal elements. We can shift the selection to the left or right by one.
+Notice that taking flipping the diagonal elements is essentially the same as saying "include every element that does not include itself", because if the diagonal element is 🅾️, it means it does not contain itself. We the flip it so that the new set contains it, and vise versa. With this view in mind, if we ban self reference, our argument would still work, because we don't really have to chose the diagonal elements. We can, for example, shift the selection to the left or right by one.
 
 <table class="table-2d">
     <tr>
@@ -600,7 +600,9 @@ In this argument, we didn't really make use of self reference because that is no
 
 # Conclusion
 
-Hopefully, by now you have gotten an intuitive sense why the universal set is too big to be a set. No matter how big the universal set it, it should be much much bigger. It also follows that for any set, not matter how large it is, is the small part compared to all the set that exists. This really makes us humble. There is so much out there that is unknown, beyond what our eyes can see and the physical universe. Whether you believe these sets are objective existence in Plato's world of form, it's truly breathtaking to see the curious properties of the universe of sets. 
+Hopefully, by now you have gotten an intuitive sense why the universal set is too big to be a set. No matter how big the universal set it, it should be much much bigger. It also follows that for any set, not matter how large it is, is the small part compared to all the set that exists. This really humbles us. There is so much out there that is unknown, beyond what our eyes can see and the physical universe. Whether you believe these sets are objective existence in Plato's world of form, it's truly breathtaking to see the curious properties of the universe of sets. 
+
+This paradox does not break set theory, but it rather shows that unrestricted comprehension -- one can add whatever to a set -- leads to inconsistency. So mathematicians have to very careful making a set bigger, through more "restricted" comprehension such as the Axiom of Pairing, the Axiom of Union, and the Axiom of Power Set. If you want to study it further, please look up Zermelo–Fraenkel set theory. 
 
 If we want to be fancy, we can proclaim "God is dead, and the universe doesn't exist!"
 
