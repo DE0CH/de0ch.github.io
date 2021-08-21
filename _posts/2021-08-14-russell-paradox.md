@@ -3,7 +3,7 @@ layout: post
 title: "How big is the universe? It's so big that it's bigger than itself."
 ---
 
-Set in set theory deals with sets -- collection of things -- like the set all natural number is a set and the set of all polygons. Sets can contain anything (including sets) and can be however large. But even though a set can be easily larger than the entire physical (not just the observable) universe, there are sets that are too large to be a set. One of them is the set of everything (known as the universal set). Known as the Russell's Paradox, the proof itself is as spectacular as the result. The attempt to create a foundation accidentally created a creature too large to be contained. 
+Set theory deals with sets - collections of things, like the set of all natural numbers and the set of all polygons. Sets can contain anything (including sets) and can be however large. But even though a set can be easily larger than the entire physical (not just the observable) universe, there are sets that are too large to be a set. One of them is the set of everything (known as the universal set). Known as the Russell's Paradox, the proof itself is as spectacular as the result. The attempt to create a foundation accidentally created a creature too large to be contained. 
 
 # A Short Proof
 
@@ -17,14 +17,13 @@ where $U$ is the universal set.
 
 Now, does $S$ contain itself? If it does, by definition, it does not, and vise versa. Let that sink in.
 
-Although the argument is logically correct and sound, it's a bit hard to understand and, in my opinion, does not capture the essence of the paradox -- the universal set is too "big" to be a set, and self reference is not the culprit [^ban-self-reference]. Therefore, I would like to introduce an alternative (and equivalent) view of the proof, which is similar to cantor's diagonal argument. It's a bit more involved and long, but it gives you a much better grasp of what the universal looks like.
+Although the argument is logically correct and sound, it's a bit hard to understand and, in my opinion, does not capture the essence of the paradox -- the universal set is too "big" to be a set, and self reference is not the culprit [^ban-self-reference]. Therefore, I would like to introduce an alternative (and equivalent) view of the proof, which is similar to Cantor's diagonal argument. It's a bit more involved and long, but it gives you a much better grasp of what the universal looks like.
 
 # Terminology Disambiguation
 
-As I was revising the draft, I noticed that the word "element" can be a bit confusing. A set contains elements. An element is always relative to a set. So when I say "an element" it means an element of the set in context. 
+As I was revising the draft, I noticed that the word "element" can be a bit confusing. A set contains elements, so an element is always relative to a set. So when I say "an element" it means an element of the set in context.
 
-Every entity/thing in our discussion is a set. This is because all mathematical structures -- numbers, functions, shapes, spaces, etc. -- can all be represented as sets. Only having sets in our discussion simplifies things [^set-definition]. So you may find me referring to the same thing as both a "set" and an "element". A set can be an element of another set.
-
+Every entity/thing in our discussion is a set. This is because all mathematical structures -- numbers, functions, shapes, spaces, etc. -- can all be represented as sets. Only having sets in our discussion simplifies things [^set-definition]. So you may find me referring to the same thing as both a "set" and an "element". That is because a set is an element of another set.
 
 # A Small Universe
 
@@ -399,7 +398,7 @@ And make a new set that is not in the universe.
     </tr>
 </table>
 
-Now we have made at least one element that is not in the set. We can conclude that the universal set, which by definition contains every set, has more than $5$ elements. A set of $5$ elements is too small to contain the universe! By the look of it, we need at least $2^5 = 32$ sets to cover all the combinations of the $5$ sets, but that shifts the problem back. By the time our set is $32$ element large, we need $2^{32} = 4294967296$ sets to cover all the combination of the $32$ sets, and ad infinitum. Just like exponential growth, the size quickly explodes.
+Now we have made at least one element that is not in the set. We can conclude that the universal set, which by definition contains every set, has more than $5$ elements. A set of $5$ elements is too small to contain the universe! By the look of it, we need at least $2^5 = 32$ sets to cover all the combinations of the $5$ sets, but that only shifts the problem back. By the time our set is $32$ element large, we need $2^{32} = 4294967296$ sets to cover all the combination of the $32$ sets, and ad infinitum. Just like exponential growth, the size quickly explodes.
 
 Our problem at hand is, unfortunately, worse than ad infinitum. The universe can't even be contained by a set of infinite set! Let's apply our reasoning to the actual universal set.
 
@@ -589,17 +588,19 @@ We flip the elements and make a new set that is not an element of the universal 
     </tr>
 </table>
 
-Also, just like last time, we can choose any radom elements, as long as we make sure to choose a at least unique element from every set. 
+Also, just like last time, we can choose any random elements, as long as we make sure to choose at least one unique element from every set. 
 
 For those who desire some more mathematical formalism, the above discussion translate to the following statement.
 
-$$S = \{x \in U: y \notin f(y) \}$$
+$$S = \{x \in U: x \notin f(x) \}$$
 
-where $f$ is a surjective function from $U$ onto $U$. Now we ask: is $f^{-1}(S)$ [^inverse-function] in $S$? It if isn't in $S$, it is in $S$, and if it is in $S$, it is not in $S$. In this argument, we didn't really make use of self reference because that is no the root cause of the paradox. It is rather because the universe is too big to be a set. 
+where $f$ is a surjective function from $U$ onto $U$. Now we ask: is $f^{-1}(S)$ [^inverse-function] in $S$? It if isn't in $S$, it is in $S$, and if it is in $S$, it is not in $S$. 
+
+In this argument, we didn't really make use of self reference because that is not the root cause of the paradox. It is rather because the universe is too big to be a set. 
 
 # Conclusion
 
-Hopefully, by now you have gotten an intuitive sense why the universal set is too big to be a set. No matter how big the universal set it, it should be much much bigger. It also follows that for any set, not matter how large it is, is the small part compared to all the set that exists. This really makes us humble. There are so much that is out there that is unknown, beyond what our eyes can see and the physical universe. Whether you believe these sets are objective existence in Plato's world of form, it's truly breathtaking to see the curious properties of the universe of sets. 
+Hopefully, by now you have gotten an intuitive sense why the universal set is too big to be a set. No matter how big the universal set it, it should be much much bigger. It also follows that for any set, not matter how large it is, is the small part compared to all the set that exists. This really makes us humble. There is so much out there that is unknown, beyond what our eyes can see and the physical universe. Whether you believe these sets are objective existence in Plato's world of form, it's truly breathtaking to see the curious properties of the universe of sets. 
 
 If we want to be fancy, we can proclaim "God is dead, and the universe doesn't exist!"
 
