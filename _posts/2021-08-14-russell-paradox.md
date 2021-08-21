@@ -3,7 +3,7 @@ layout: post
 title: "How big is the universe? It's so big that it's bigger than itself."
 ---
 
-Set theory deals with sets - collections of things, like the set of all natural numbers and the set of all polygons. Sets can contain anything (including sets) and can be however large. But even though a set can be easily larger than the entire physical (not just the observable) universe, there are sets that are too large to be a set. One of them is the set of everything (known as the universal set). Known as the Russell's Paradox, the proof itself is as spectacular as the result. The attempt to create a foundation through set theory accidentally created a creature too large to be contained. 
+We investigate infinity with set theory, which deals deals with sets - collections of things, like the set of all natural numbers and the set of all polygons. Sets can contain anything (including sets) and can be however large. But even though a set can be easily larger than the entire physical (not just the observable) universe, there are sets that are too large to be a set. One of them is the set of everything (known as the universal set). Known as the Russell's Paradox, the proof itself is as spectacular as the result. The attempt to create a foundation through set theory accidentally created a creature too large to be contained. 
 
 # A Short Proof
 
