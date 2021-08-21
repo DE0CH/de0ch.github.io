@@ -17,7 +17,7 @@ where $U$ is the universal set.
 
 Now, does $S$ contain itself? If it does, by definition, it does not, and vise versa. Let that sink in.
 
-Although the argument is logically correct and sound, it's a bit hard to understand and, in my opinion, does not capture the essence of the paradox -- the universal set is too "big" to be a set, and self reference is not the culprit [^ban-self-reference]. Therefore, I would like to introduce an alternative (and equivalent) view of the proof, which is similar to Cantor's diagonal argument. It's a bit more involved and long, but it gives you a much better grasp of what the universal looks like.
+Although the argument is logically correct and sound, it's a bit hard to understand and, in my opinion, does not capture the essence of the paradox -- the universal set is too "big" to be a set, and self reference is not the culprit [^ban-self-reference]. Therefore, I would like to introduce an alternative (and equivalent) view of the proof, which is similar to Cantor's diagonal argument. It's a bit more involved and long, but it gives you a much better grasp of what the universal set looks like.
 
 # Terminology Disambiguation
 
