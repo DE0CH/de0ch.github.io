@@ -563,7 +563,7 @@ Notice that flipping the diagonal elements is essentially the same as saying "in
     </tr>
 </table> 
 
-We flip the elements and make a new set that is not an element of the universal set. For the first element of the set, we can either choose to include it or not. Just like before, we are different from all the table. We have found another element that is nowhere to be found in the able. 
+We flip the elements and make a new set that is not an element of the universal set. For the first element of the set, it doesn't matter if we include it or not. Just like before, this new element is different from all the elements in the universe.
 
 <table class="table-2d">
     <tr>
@@ -588,7 +588,7 @@ We flip the elements and make a new set that is not an element of the universal 
 
 Also, just like last time, we can choose any random elements, as long as we make sure to choose at least one unique element from every set. 
 
-For those who desire some more mathematical formalism, the above discussion translate to the following statement.
+For those who desire some more mathematical formalism, the above sentence translates to the following statement.
 
 $$S = \{x \in U: x \notin f(x) \}$$
 
