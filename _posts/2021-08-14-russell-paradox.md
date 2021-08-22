@@ -3,7 +3,7 @@ layout: post
 title: "How big is the universe? It's so big that it's bigger than itself."
 ---
 
-We investigate infinity with set theory, which deals deals with sets - collections of things, like the set of all natural numbers and the set of all polygons. Sets can contain anything (including sets) and can be however large. But even though a set can be easily larger than the entire physical (not just the observable) universe, there are sets that are too large to be a set. One of them is the set of everything (known as the universal set). Known as the Russell's Paradox, the proof itself is as spectacular as the result. The attempt to create a foundation through set theory accidentally created a creature too large to be contained. 
+We investigate infinity with set theory, which deals deals with sets - collections of things, like the set of all natural numbers and the set of all polygons. Sets can contain anything (including sets) and can be however large. But even though a set can be easily larger than the entire physical (not just the observable) universe, there are sets that are too large to be a set. One of them is the set of everything (known as the universal set). Known as the Russell's Paradox, the proof itself is as spectacular as the result: the attempt to create a foundation through set theory accidentally created a creature too large to be contained. 
 
 # A Short Proof
 
@@ -21,17 +21,15 @@ Although the argument is logically correct and sound, it's a bit hard to underst
 
 # Terminology Disambiguation
 
-As I was revising the draft, I noticed that the word "element" can be a bit confusing. A set contains elements, so an element is always relative to a set. So when I say "an element" it means an element of the set in context.
-
-Every entity/thing in our discussion is a set. This is because all mathematical structures -- numbers, functions, shapes, spaces, etc. -- can all be represented as sets. Only having sets in our discussion simplifies things [^set-definition]. So you may find me referring to the same thing as both a "set" and an "element". That is because a set is an element of another set.
+Every entity/thing in our discussion is a set. This is because all mathematical structures -- numbers, functions, shapes, spaces, etc. -- can all be represented as sets. Only having sets in our discussion simplifies things [^set-definition]. An "element" is also a set, but it puts emphasis on the fact that it is contained in another set. So you may find me referring to the same thing as both a "set" and an "element". That is because a set is an element of another set.
 
 # A Small Universe
 
 Looking at the universal set directly can be quite daunting and disorientating because it's infinite in size. So we will start with a smaller "universal" set. We will prove that the universal set contains more than 5 elements. (If you are familiar with Cantor's diagonal argument, you may skip to the section A Large Universe)
 
-No duh, you say. But stick with me, if we meticulously examine the underlying logic for our intuition, we can apply the similar logic to a bigger case where intuition fails.
+No duh, you say. It's so obvious that we don't need a proof. But stick with me, if we meticulously examine the underlying logic for our intuition, we can apply the similar logic to a bigger case where intuition fails.
 
-The only elements in our universe are 🍟, 🍕, 🥪, 🌮, 🥨. Since these are the only elements in the "universe", it follows that they are composed only of themselves, such as
+Let's say the only elements in our universe are 🍟, 🍕, 🥪, 🌮, 🥨. Since these are the only elements in the "universe", it follows that they are composed only of themselves, such as
 
 - 🍟 = {🍕} 
 - 🍕 = {}
@@ -138,7 +136,7 @@ It means that the set 🥪
 - contains 🌮
 - does not contain 🥨
 
-You might notice that there are a lot of combinations of the five sets that is not in the universe. For example, the set {🍕, 🌮} is not in the "universal" set. Right now, we can just think about a set by looking it, but as it gets larger, we need a systematic way finding a set that does not exists. 
+You might notice that there are a lot of combinations of the five sets that is not in the universe. For example, the set {🍕, 🌮} is not in the "universal" set. Right now, we can just think about a set by looking at it, but as it gets larger, we need a systematic way finding a set that does not exists. 
 
 For finding a new set that is not in the universe, we use a technique called diagonalization. 
 
