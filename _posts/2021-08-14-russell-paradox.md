@@ -496,7 +496,7 @@ But this element is not in the universal set, because it is different from every
 
 So what? Can't we just make it bigger and include the new element? Yes, but the key is that we have already *assumed* that we have everything in the universal set at first. We have reached a contradiction. We have carefully reasoned our way through, so the problem must lie the assumption. It is also important to note that this is different from infinity. Infinity, in set theory, is a defined concept, whereas this is a logical paradox.
 
-Notice that taking flipping the diagonal elements is essentially the same as saying "include every element that does not include itself", because if the diagonal element is 🅾️, it means it does not contain itself. We the flip it so that the new set contains it, and vise versa. With this view in mind, if we ban self reference, our argument would still work, because we don't really have to chose the diagonal elements. We can, for example, shift the selection to the left or right by one.
+Notice that flipping the diagonal elements is essentially the same as saying "include every element that does not include itself", because if the diagonal element is 🅾️, it means it does not contain itself. We the flip it so that the new set contains it, and vise versa. With this view in mind, if we ban self reference, our argument would still work, because we don't really have to chose the diagonal elements. We can, for example, shift the selection to the left or right by one.
 
 <table class="table-2d">
     <tr>
