@@ -598,7 +598,7 @@ In this argument, we didn't really make use of self reference because that is no
 
 # Conclusion
 
-Hopefully, by now you have gotten an intuitive sense why the universal set is too big to be a set. No matter how big the universal set it, it should be much much bigger. It also follows that for any set, no matter how large, is the small part compared to all the set that exists. This really humbles us. There is so much out there that is unknown, beyond what our eyes can see and the physical universe. Whether you believe these sets are objective existence in Plato's world of form, it's truly breathtaking to see the curious properties of the universe of sets. 
+Hopefully, by now you have gotten an intuitive sense why the universal set is too big to be a set. No matter how big the universal set it, it should be much much bigger. It also follows that for any set, no matter how large, is the small part compared to all the set that exists. This really humbles us. There is so much out there that is unknown, beyond what our eyes can see and the physical universe. Whether you believe these sets are objective existence in Plato's world of forms, it's truly breathtaking to see the curious properties of the universe of sets. 
 
 This paradox does not break set theory, but it rather shows that unrestricted comprehension -- one can add whatever to a set -- leads to inconsistency, a set that is too big to be a set. So mathematicians have to very careful making a set bigger, through more "restricted" comprehension such as the Axiom of Pairing, the Axiom of Union, and the Axiom of Power Set. If you want to study it further, please look up Zermelo–Fraenke (ZFC) set theory. 
 
