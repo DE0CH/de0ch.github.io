@@ -471,7 +471,7 @@ Let's, for now, assume that the universal set exists. Just like before, we write
     </tr>
 </table> 
 
-Similarity, we can also construct an element by inverting the diagonal elements, to make something like 
+Similarly, we can also construct an element by inverting the diagonal elements, to make something like 
 
 <table class="table-2d">
     <tr>
@@ -612,4 +612,4 @@ If we want to be fancy, we can proclaim "God is dead, and the universe doesn't e
 
 [^ban-self-reference]: It's tempting to argue that we can avoid the paradox all together if we disallow a set to contain itself, but that is not a valid because a similar paradox can be formed. It will be much clearer as we introduce the new view. 
 
-[^inverse-function]: Because $f$ is a surjection function, it does not have an inverse in the algebraic sense, but for now, we can view $f^{-1}(x)$ as *one of* the input that would give $x$ for $f$. 
+[^inverse-function]: Because $f$ is a surjection function, it does not have an inverse in the algebraic sense, but for now, we can view $f^{-1}(x)$ as *one of* the input that would give $x$ when inputted to $f$. 
