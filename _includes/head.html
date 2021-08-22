@@ -4,6 +4,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+{% if page.custom_css %}
+  {% for stylesheet in page.custom_css %}
+    {% assign url = "/assets/css/" | append: stylesheet | append: ".css" %}
+    <link rel="stylesheet" href="{{ url | relative_url }}">
+  {% endfor %}
+{% endif %}
 
 
 
