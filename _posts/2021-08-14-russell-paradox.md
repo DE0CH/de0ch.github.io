@@ -466,6 +466,7 @@ Let's assume that the universal set exists. Just like before, we write out the u
         <td></td>
         <td></td>
         <td></td>
+        <td></td>
     </tr>
 </table> 
 
@@ -556,6 +557,7 @@ Notice that flipping the diagonal elements is essentially the same as saying "in
     <tr>
         <th>...</th>
         <td>...</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
