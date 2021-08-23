@@ -606,6 +606,8 @@ This paradox does not break set theory, but it rather shows that unrestricted co
 
 If we want to be fancy, we can proclaim "God is dead, and the universe doesn't exist!"
 
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+
 [^continuum-hypothesis]: I am referring to the continuum hypothesis here. 
 
 [^set-definition]: Another major motivation of set theory is to formalize all systems of math in order to make them rigours, creating a solid foundation for used-to-be "intuitive" axioms and definitions. This scheme would best avoid inconsistency and falsehood.
