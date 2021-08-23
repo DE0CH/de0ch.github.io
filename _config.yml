@@ -7,13 +7,14 @@ long_description: > # this means to ignore newlines until "twitter_username:"
   I am just another person trying to do something useful for the world. I write mostly about math and programming, occasionally about some other randoms thoughts I have.
 
 # social links
-twitter_username: deyaochen
+instagram_username: deyaochen
+
 github_username:  de0ch
 source_code: https://github.com/de0ch/de0ch.github.io
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
-# instagram_username: jekyll
+# twitter_username: deyaochen
 # linkedin_username: jekyll
 # pinterest_username: jekyll
 # youtube_username: jekyll
