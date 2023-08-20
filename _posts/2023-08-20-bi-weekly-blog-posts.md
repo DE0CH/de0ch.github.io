@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Launching of Bi-Weekly Blogs"
+title: "Launching of Bi-Weekly Blog Posts"
 ---
 
-I wanted to start writing a blog every two weeks for a long time but I kept delaying it. Recent events with the YouTube channel Linus Tech Tips pushed me to finally publish this blog.
+I wanted to start writing a blog post every two weeks for a long time but I kept delaying it. Recent events with the YouTube channel Linus Tech Tips pushed me to finally publish this blog post.
 
 # The Unfortunate First Draft 
 
-The opening of the blog would have been:
+The opening of the blog post would have been:
 
 I was watching Linus Tech Tips, a massively successful and my favourite tech YouTube channel. Linus said something that quite inspired me (paraphrased since I can't find the original clip). 
 
@@ -35,7 +35,7 @@ So I realised this incident shouldn't invalidate all claims in this post and the
  
 This point is also supported anecdotally by a social experiment done by Jerry Uelsmann, a professor at the University of Florida. He divided his film photography students into two groups. He told the first group that their photos would be graded on the quality of a single photo, and he told the other group that their photos would be graded based on the quantity of the photos: one hundred photos would be graded A, ninety photos would be graded B and eighty photos would be C. At the end of the term, to his surprise, all the best photos were produced by the students who were graded on the quantity of their work. They were able to produce better quality work because they got more practice by taking action.
 
-The other day I encountered Raymond Chen's blog. To my utter astonishment, he has been writing one blog every day for the last 20 years, amounting to 6800 posts in total. Some of them are of super high quality as well. If he could keep up with writing a post every day, I can certainly manage having one post every two weeks no matter how busy I am. 
+The other day I encountered Raymond Chen's blog post. To my utter astonishment, he has been writing one blog post every day for the last 20 years, amounting to 6800 posts in total. Some of them are of super high quality as well. If he could keep up with writing a post every day, I can certainly manage having one post every two weeks no matter how busy I am. 
 
 # Putting Ideas into Practice
 
@@ -43,11 +43,11 @@ Therefore I will take action, instead of waiting for the perfect idea to write a
 
 I realised I struggle a lot with creative tasks with no well-defined end and correct answer.  I just tend to go down various rabbit holes I come across. This approach works well in math problems and coding projects because when the problem is solved, the rabbit hole ends. But for complicated topics, the rabbit hole never ends, leaving me unsatisfied. The feeling of lack of completion is so debilitating that it often puts me off from even beginning writing or work on any creative project.
 
-I realised the solution, to speak in programming terms, is to change from depth-first search to breath-first search. This means not going down rabbit holes before the ground is explored completely. For example, instead of finishing one paragraph well and then moving on to the next, I should first finish a rough draft and then fill in the details. In addition, I will set a deadline for projects. This is a primary reason why I want to launch this bi-weekly blog, as it would force me to put an end to exploring a topic that otherwise would never have a clear end. Through practice, I can learn the techniques of writing and finishing projects that don't have well-defined ends and can't be perfect. This commitment should keep me accountable and not delay blogs one week after another to eventually not publishing anything for more than two years!
+I realised the solution, to speak in programming terms, is to change from depth-first search to breath-first search. This means not going down rabbit holes before the ground is explored completely. For example, instead of finishing one paragraph well and then moving on to the next, I should first finish a rough draft and then fill in the details. In addition, I will set a deadline for projects. This is a primary reason why I want to launch this bi-weekly blog post, as it would force me to put an end to exploring a topic that otherwise would never have a clear end. Through practice, I can learn the techniques of writing and finishing projects that don't have well-defined ends and can't be perfect. This commitment should keep me accountable and not delay blog posts one week after another to eventually not publishing anything for more than two years!
 
-The only problem now, which I totally could not have foreseen in absolutely any way, is that I just keep delaying making the first post. Luckily, recent events have put a hard deadline on this, as I want to publish this blog before Linus publishes the results of the ongoing investigation for the current issue thus making me feel uncomfortable about publishing this again. So this is a very opportune time for me the take the first hard step.
+The only problem now, which I totally could not have foreseen in absolutely any way, is that I just keep delaying making the first post. Luckily, recent events have put a hard deadline on this, as I want to publish this blog post before Linus publishes the results of the ongoing investigation for the current issue thus making me feel uncomfortable about publishing this again. So this is a very opportune time for me the take the first hard step.
 
-At this point, I don't really know what the theme for my blogs would be. Most likely it will be some things interesting I learned in the two weeks or thoughts I want to share. Occasionally,  I might spend more time writing something bigger. Ultimately, my goal is to simply write something that is worth the reader's time. I hope you will enjoy this series. 
+At this point, I don't really know what the theme for my blog posts would be. Most likely it will be some things interesting I learned in the two weeks or thoughts I want to share. Occasionally,  I might spend more time writing something bigger. Ultimately, my goal is to simply write something that is worth the reader's time. I hope you will enjoy this series. 
 
 # Commitment 
 
