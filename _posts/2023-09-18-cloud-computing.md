@@ -1,0 +1,52 @@
+---
+layout: post
+title: "Cloud Computing is the Future (But not Game Streaming)"
+---
+
+No one nowadays buys a generator to generate electricity; rather, we buy it as a finished product from power plants delivered through the grid, but why is it that people still buy computers instead of buying the finished product, which is computing power delivered through the internet? 
+
+In this blog post, I want to explore why it is not the case that we stream video games from the cloud or do many computations on the cloud. Why is it not that every device just essentially becomes a screen with wifi? What is still missing?
+
+## Choice of Intermediate Representation is Important
+
+If you ever tried cloud gaming, you might find that sometimes the latency and internet connection is so unstable that it makes the game unplayable. The straightforward solution is to make the network connection better. However, I would argue that the actual solution is more subtle than that. It has to do with choosing the right intermediate representation. 
+
+An intermediate representation is the form in which data exists and awaits further processing. For the same piece of data or code, there are many ways to represent it, like different file formats or programming languages. Different ways of intermediate representation are suitable for different situations. 
+
+The simplest example to illustrate what intermediate representation is is to imagine that you want to write a program that calculates the area of a sphere given the radius, for which you need to know the value of $\pi$. There are many representations of $\pi$ — decimal value, infinite series or continued fraction. Using infinite series will give you the same result eventually but will require a lot of computational power. 
+
+In the case of cloud gaming, The Intermediate representation is the video signal, when browsing the web it is the HTML, CSS and JavaScript code. In the case of a downloaded desktop application, it is the machine instruction for your CPU to do computation. 
+
+The intermediate representations for desktop and web pages are vastly different. A desktop app should aim to be self-sufficient so it should download all the required parts in one go. These apps often need a rendering engine that knows, among other things, how to draw a circle and has instructions to handle networking, whereas a web app needs to be loaded quickly at first so browsers use HTML, CSS and JavaScript as intermediate representations. These types of code don’t contain specific instructions for how to render elements or do network requests but rather the shape of elements themselves or the link to a web page. Then the browser calls on its own code to handle the lower-level functions that many web pages share. 
+
+Regardless of the intermediate representation, the end result that a person sees is the same — coloured lights on a screen. However, the choice matters for the most efficient computation. It is a tradeoff between computational power, network bandwidth, and storage space. Desktop apps do not need the internet but it is slow to download, web app does not need to be downloaded in advance but requires a good internet connection and cloud gaming do not require any computational power but needs really reliable internet connections.
+
+Many apps have different intermediate representations for different situations. Take WhatsApp as an example, it exists as a mobile app that requires an initial lengthy download but is fast to start up and can work offline. It also exists as a web page that doesn’t require download but cannot work offline. If you so desire, you can also run WhatsApp on a cloud computer like Windows 365 and stream the video back to you. The first two options make sense; the last one doesn’t. 
+
+Just like any design choices, there are objectively bad intermediate representations that are not used at all. For example, represents $\pi$ as an infinite series in code instead of its decimal value. In the real world, it is objectively bad to distribute a program as source code to the end user, as source code is used as an intermediate representation that facilitates reading and writing the program but not for running it. So most of the time, developers just compile the source code into machine code which runs faster and is smaller in size before distributing it. 
+
+Designing and implementing good intermediate representations is no easy task. The web took a few decades to get to the point it is now and writing a browser, which essentially transforms one intermediate representation to another — text to pixels on a screen — is so difficult that there are essentially only three browser engines in the world, Chrome, Firefox and Safari, all backed by giant corporations. Even Microsoft tried and failed to write its own browser engine for its Edge browser and eventually gave up and used the engine for Chrome instead. 
+
+## Cloud Computing for Text is Well Designed
+
+In my experience, cloud computing for anything related to text is quite well designed. These include email servers and search engines. 
+
+Text-based cloud computing also works for more complicated scenarios. Remote development using Visual Studio Code is a prime example of this. Instead of running code on your own computer, it lets a cloud computer do the work. While complex logic is offloaded to the remote machine, most of the user interface (UI) elements are computed in a browser and only the essential information like the texts in a file and command is sent to the remote server. All the other functions like rendering where the cursor is or the layout of the window are computed on device.
+
+If you use an extension that needs to run some code like autocompletion, it works by sending the text to the server and getting the possible choices back. After the choice is made, the file is first changed in the browser without waiting for the server to respond with a new version. It updates it with the new version when a response comes back from the server should it be different from the one displayed on the screen for whatever reason. This is called optimistic rendering in web design. This makes the code code editor seem very responsive even if the network is unstable. This also means adapting desktop applications to web applications requires special care because they are often written not with latency in mind nor considering separating background tasks and UI updates.
+
+In summary, when processing text in the cloud, only the text is sent back and forth, and the UI elements are rendered on device for responsiveness. That is, when you press a key, your device computes where the letter should go and what the shape of the letter is, as opposed to sending the raw keystroke to a remote server and having the remote server send back an image of the text. As obvious as this is, it is not how some of the badly designed cloud computing works, such as cloud gaming. 
+
+## Cloud Computing for Video is Thoughtless
+
+We have mature intermediate representations for the web and desktop but the requirements for that for game streaming are vastly different. Not only does cloud computing require minimum computation on the client machine, fast initial load time, and responsiveness like the web, but it also needs to achieve the visual complexity of computationally expensive video games which is different from the mostly text-based content on the web. 
+
+Currently, we just transmit the video from the cloud and send input commands from the device, but this does not create a good experience because if your internet doesn’t have a very low latency — the time it takes for a message from one computer to another — the game will not be playable. Unfortunately, the current internet infrastructure is built with mainly bandwidth — the amount of data transmitted in a period of time — in mind. Intermediate representations for web pages are not really sensitive to latency. One would probably not notice if a webpage takes half a second more to load. You are even less likely to notice if a software download starts half a second later, but you will definitely notice if your cursor movement lags your mouse movement by half a second — it makes it impossible for you to accurately aim your mouse.
+
+While it is sufficient to just build a better network infrastructure that lowers the latency, it is not necessary. This is better solved by designing better intermediate representations. Solving it by reducing the latency is like making the web work by making the bandwidth so high that we can just download an entire desktop application a web page instead of designing lightweight HTML, CSS and JavaScript that are much more suitable. 
+
+I have a few thoughts on how an intermediate representation can be designed. Although I have never written a graphics engine, I believe that there should be some intermediate representations that are more easily adapted to different inputs. We can view computing graphics as essentially a really complicated function with the camera position and angle and the environment of the game as input and the colour and brightness of pixels as output. Instead of having the remote server do all the calculations and the client having no idea how to change the output in response to changes in input, we can have the remote server compute an approximate and easy-to-calculate function that is accurate around the current input and is enough to fill in the gap when the client computer is waiting for the next frame. 
+
+Creating new intermediate representations is really difficult work. Not only do you need a lot of theoretical knowledge to prove that it works well for all situations and is efficient but you also need a lot of effort writing the tooling around the new standard, fixing bugs and bad design along the way. After the tooling becomes mature and stable, you still need to port current programs or design new programs with this in mind. All of these take a lot of time and effort so for now we just use the most simple method which is to transmit video frame by frame. This is why cloud computing is quite bad in its current form and why I think it will get much better over time. 
+
+Cloud computing doesn’t work well now because it is still not well-developed or well-designed. The current form is not very efficient. It will become better over time and will soon become as ubiquitous as the web today, so ubiquitous and natural that buying computers will be as niche as it is to buy an electric generator today. 
