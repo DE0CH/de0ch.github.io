@@ -254,6 +254,51 @@
   }
 }
 
+.block-list-base {
+  // copied from .social-media-list from minima. Don't want to change social media list so renamed it
+  display: table;
+  margin: 0 auto;
+  li {
+    list-style: none;
+    margin-left: 0;
+    float: left;
+    margin: 5px 10px 5px 0;
+    &:last-of-type { margin-right: 0 }
+    a {
+      display: block;
+      padding: 10px 12px;
+      border: 1px solid $grey-color-light;
+      &:hover { border-color: lighten($grey-color, 35%) }
+    }
+  }
+}
+
+/**
+ * Pagination navbar
+ */
+.pagination {
+  margin-bottom: $spacing-unit;
+  @extend .block-list-base;
+  li {
+    a, div {
+      min-width: 41px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    div {
+      display: block;
+      padding: $spacing-unit * .25;
+      border: 1px solid transparent;
+
+      &.pager-edge {
+        color: $grey-color-light;
+        border: 1px dashed;
+      }
+    }
+  }
+}
+
+
 
 .footnotes {
   color: $grey-color;
